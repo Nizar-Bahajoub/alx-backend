@@ -6,6 +6,8 @@ from typing import Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    """ Function returnong the start, end index of pages"""
+
     start_idx = 0
 
     for i in range(1, page):
