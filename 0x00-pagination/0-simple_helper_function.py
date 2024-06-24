@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Pagination Task 0
+Pagination Task 0: simple helper function
 """
 from typing import Tuple
 
