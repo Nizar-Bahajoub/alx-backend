@@ -1,4 +1,3 @@
-guillaume@ubuntu:~/0x01$ cat 1-main.py
 #!/usr/bin/python3
 """ 1-main """
 FIFOCache = __import__('1-fifo_cache').FIFOCache

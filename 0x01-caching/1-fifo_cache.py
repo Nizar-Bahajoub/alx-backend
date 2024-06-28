@@ -15,9 +15,11 @@ class FIFOCache(BaseCaching):
         """
         if key is None or item is None:
             return
+        self.cache_data[key] = item
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
-            discarder_item = self.cach_data.pop(0)
-            print("DISCARD: ".format(discarder_item))
+            disc_item = next(iter(self.cache_data))
+            print("DISCARD: {}".format(disc_item))
+            self.cache_data.pop(disc_item)
 
     def get(self, key):
         """Get Function getting items of a specific key
